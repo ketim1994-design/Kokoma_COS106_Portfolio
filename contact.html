@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Kokoma's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="contact.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo">Kokoma's Portfolio</div>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Academic Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="profile-card">
+    <h1>Contact Me</h1>
+
+    <p>
+        Thank you for visiting my portfolio.
+        Please complete the form below to send me a message.
+    </p>
+
+    <section class="contact-section">
+        <h2>Send a Message</h2>
+
+        <form id="contact-form" novalidate>
+            <label for="visitor-name">Full Name</label>
+            <input
+                type="text"
+                id="visitor-name"
+                name="visitor-name"
+                placeholder="Enter your full name"
+                required
+                maxlength="100"
+            >
+
+            <label for="visitor-email">Email Address</label>
+            <input
+                type="email"
+                id="visitor-email"
+                name="visitor-email"
+                placeholder="Enter your email address"
+                required
+                maxlength="254"
+            >
+
+            <label for="visitor-subject">Subject</label>
+            <input
+                type="text"
+                id="visitor-subject"
+                name="visitor-subject"
+                placeholder="What is your message about?"
+                required
+                maxlength="150"
+            >
+
+            <label for="visitor-message">Message</label>
+            <textarea
+                id="visitor-message"
+                name="visitor-message"
+                rows="6"
+                placeholder="Write your message here"
+                required
+                maxlength="2000"
+            ></textarea>
+
+            <button type="submit">Validate Message</button>
+        </form>
+
+        <p id="contact-feedback" role="status" aria-live="polite"></p>
+
+        <p class="form-note">
+            This demonstration validates your message in the browser.
+            It does not send an email.
+        </p>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2026 Kokoma Ide Etim. Student Portfolio.</p>
+</footer>
+
+</body>
+</html>
